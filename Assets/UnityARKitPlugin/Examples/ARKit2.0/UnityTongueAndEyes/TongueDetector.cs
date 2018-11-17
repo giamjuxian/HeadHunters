@@ -6,7 +6,8 @@ using UnityEngine.UI;
 
 public class TongueDetector : MonoBehaviour 
 {
-	public GameObject tongueImage;
+    [SerializeField]
+    ParticleSystem dandruffDropping;
 	bool shapeEnabled = false;
 	Dictionary<string, float> currentBlendShapes;
 
@@ -19,21 +20,25 @@ public class TongueDetector : MonoBehaviour
 
 	}
 
-	void OnGUI()
-	{
-		bool enableTongue = false;
+    void OnGUI()
+    {
+        bool enableTongue = false;
 
-		if (shapeEnabled) 
-		{
-			if (currentBlendShapes.ContainsKey (ARBlendShapeLocation.TongueOut)) 
-			{
-				enableTongue = (currentBlendShapes [ARBlendShapeLocation.TongueOut] > 0.5f);
+        if (shapeEnabled)
+        {
+            if (currentBlendShapes.ContainsKey(ARBlendShapeLocation.TongueOut))
+            {
+                enableTongue = (currentBlendShapes[ARBlendShapeLocation.TongueOut] > 0.5f);
 
-			}
+            }
 
-		}
+        }
 
-		tongueImage.SetActive (enableTongue);
+        if (enableTongue)
+        {
+            Debug.Log("TONGUE IS OUT");
+            dandruffDropping.Play();
+        }
 	}
 
 	void FaceAdded (ARFaceAnchor anchorData)
