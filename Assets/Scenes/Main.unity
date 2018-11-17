@@ -437,7 +437,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4743979006002780, guid: d8499991a2f184717ba0e77911fff017, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.0678
+      value: -0.0966
       objectReference: {fileID: 0}
     - target: {fileID: 4743979006002780, guid: d8499991a2f184717ba0e77911fff017, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1970,8 +1970,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -150}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 64, y: -82}
-  m_SizeDelta: {x: 50, y: 60}
+  m_AnchoredPosition: {x: 130, y: -124}
+  m_SizeDelta: {x: 150, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371339640
 MonoBehaviour:
@@ -3791,7 +3791,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &654617506
 Transform:
   m_ObjectHideFlags: 0
@@ -6620,7 +6620,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1092708751
 Transform:
   m_ObjectHideFlags: 0
@@ -7128,7 +7128,7 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: b8a13f161f06146a29c5968144194c8c, type: 2}
+  - {fileID: 2100000, guid: aa8bac64ceb8b4568b1b905d46830e50, type: 2}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -11999,15 +11999,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4743979006002780, guid: d8499991a2f184717ba0e77911fff017, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.0019999999
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 4743979006002780, guid: d8499991a2f184717ba0e77911fff017, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.0019999999
+      value: 0.002
       objectReference: {fileID: 0}
     - target: {fileID: 4743979006002780, guid: d8499991a2f184717ba0e77911fff017, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.0019999999
+      value: 0.002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d8499991a2f184717ba0e77911fff017, type: 2}
@@ -18543,7 +18543,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1612360948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.128, z: 0}
+  m_LocalPosition: {x: 0, y: -1.128, z: 0.0105}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 597461923}
@@ -20015,8 +20015,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 150}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -62, y: -82}
-  m_SizeDelta: {x: 65, y: 65}
+  m_AnchoredPosition: {x: -112, y: -124}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1837629154
 MonoBehaviour:

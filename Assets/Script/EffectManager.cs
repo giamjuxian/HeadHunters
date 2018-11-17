@@ -82,17 +82,11 @@ public class EffectManager : MonoBehaviour
     {
         if (hasDandruff)
         {
-            Debug.Log("Hello");
             int index = Random.Range(0, dandruffParticlesChildArray.Count);
             if (dandruffParticlesChildArray[index].activeSelf == false)
             {
                 dandruffParticlesChildArray[index].SetActive(true);
             }
         }
-    }
-
-    void Update()
-    {
-
     }
 }
