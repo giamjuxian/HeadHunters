@@ -1333,6 +1333,108 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4743979006002780, guid: d8499991a2f184717ba0e77911fff017,
     type: 2}
   m_PrefabInternal: {fileID: 141079700}
+--- !u!1001 &173385945
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 472823355}
+    m_Modifications:
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -82.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_Name
+      value: Sunglasses
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 80753b675ddb04ddf931e44db2dcebed, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: edd6f6650694d4f76b84150fa3783764, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!4 &173385946 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400002, guid: edd6f6650694d4f76b84150fa3783764,
+    type: 3}
+  m_PrefabInternal: {fileID: 173385945}
+--- !u!1 &173385947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: edd6f6650694d4f76b84150fa3783764,
+    type: 3}
+  m_PrefabInternal: {fileID: 173385945}
+--- !u!95 &173385948
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 173385947}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 838dcadae7c2846c9a8c91191f8a2702, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &174982429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,6 +3059,7 @@ Transform:
   - {fileID: 1518785665}
   - {fileID: 2094105660}
   - {fileID: 881751417}
+  - {fileID: 173385946}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4070,12 +4173,12 @@ GameObject:
   - component: {fileID: 654617506}
   - component: {fileID: 654617507}
   m_Layer: 0
-  m_Name: Eye Manager
+  m_Name: Wink Detector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &654617506
 Transform:
   m_ObjectHideFlags: 0
@@ -4097,10 +4200,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 654617505}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5e00426d34cb40fe8536720471a24bb, type: 3}
+  m_Script: {fileID: 11500000, guid: fc9af0e78ae804112a60b58223a04a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  eyePrefab: {fileID: 1989800666789462, guid: e43066e50be7c43908f324c203e4c784, type: 2}
+  sunglasses: {fileID: 173385947}
 --- !u!1001 &658495093
 Prefab:
   m_ObjectHideFlags: 0
@@ -27311,7 +27414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2094105660
 Transform:
   m_ObjectHideFlags: 0
