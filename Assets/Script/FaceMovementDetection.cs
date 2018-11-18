@@ -58,10 +58,9 @@ public class FaceMovementDetection : MonoBehaviour
         newheadRotation = anchor.transform.rotation;
         angleMoved = Mathf.Acos(Quaternion.Dot(newheadRotation, headRotation));
         angleMoved = Mathf.Abs(angleMoved);
-        Debug.Log("Angle Moved " + angleMoved);
         if ((angleMoved * (180 / Mathf.PI)) > 3)
         {
-            textDebug.text += "HEAD ROTATED\n";
+            // textDebug.text += "HEAD ROTATED\n";
             headRotated = true;
         }
 

@@ -6,8 +6,6 @@ using UnityEngine.UI;
 
 public class TongueDetector : MonoBehaviour 
 {
-    [SerializeField]
-    ParticleSystem dandruffDropping;
 	bool shapeEnabled = false;
 	Dictionary<string, float> currentBlendShapes;
 
@@ -37,7 +35,6 @@ public class TongueDetector : MonoBehaviour
         if (enableTongue)
         {
             Debug.Log("TONGUE IS OUT");
-            dandruffDropping.Play();
         }
 	}
 
