@@ -7,6 +7,12 @@ public class MouthDetector : MonoBehaviour {
 
     [SerializeField]
     GameObject butterflies;
+    [SerializeField]
+    GameObject cherryBlossomsEffect;
+    [SerializeField]
+    GameObject cherryTree;
+    Animator cherryTreeAnimator;
+
     ButterfliesEffect butterfliesEffect;
 
     bool shapeEnabled = false;
@@ -19,25 +25,37 @@ public class MouthDetector : MonoBehaviour {
         UnityARSessionNativeInterface.ARFaceAnchorUpdatedEvent += FaceUpdated;
         UnityARSessionNativeInterface.ARFaceAnchorRemovedEvent += FaceRemoved;
         butterfliesEffect = butterflies.GetComponent<ButterfliesEffect>();
+        cherryTreeAnimator = cherryTree.GetComponent<Animator>();
 
     }
 
     void Update()
     {
-        bool enableMouthOpen = false;
+        bool enableMouthSmile = false;
         if (shapeEnabled)
         {
-            if (currentBlendShapes.ContainsKey(ARBlendShapeLocation.JawOpen))
+            if (currentBlendShapes.ContainsKey(ARBlendShapeLocation.MouthSmileLeft) &&
+                currentBlendShapes.ContainsKey(ARBlendShapeLocation.MouthSmileRight))
             {
-                enableMouthOpen = (currentBlendShapes[ARBlendShapeLocation.JawOpen] > 0.5f);
+                enableMouthSmile = (currentBlendShapes[ARBlendShapeLocation.MouthSmileLeft] > 0.5f &&
+                                  currentBlendShapes[ARBlendShapeLocation.MouthSmileRight] > 0.5f);
             }
         }
 
-        if (enableMouthOpen)
+        if (enableMouthSmile)
         {
+            cherryBlossomsEffect.SetActive(true);
+            cherryTree.SetActive(true);
+            if (!cherryTreeAnimator.GetCurrentAnimatorStateInfo(0).IsTag("1")) {
+                cherryTreeAnimator.Play("Cherry Blooming");
+            }
+
             butterfliesEffect.StartButterflyAnimation();
 
         } else {
+            cherryBlossomsEffect.SetActive(false);
+            cherryTree.SetActive(false);
+            cherryTreeAnimator.Play("Idle");
             butterfliesEffect.StopButterflyAnimation();
         }
     }

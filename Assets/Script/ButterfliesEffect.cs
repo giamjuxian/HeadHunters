@@ -21,14 +21,19 @@ public class ButterfliesEffect : MonoBehaviour
     public void AnimateRandomButterfly()
     {
         int index = Random.Range(0, butterflyList.Capacity);
-        Animation anim = butterflyList[index].GetComponent<Animation>();
-        if (anim && !anim.isPlaying)
+        if (index < butterflyList.Capacity)
         {
-            anim.Play();
+            Animation anim = butterflyList[index].GetComponent<Animation>();
+            if (anim && !anim.isPlaying)
+            {
+                anim.Play();
+            }
         }
+
     }
 
-    public void StartButterflyAnimation() {
+    public void StartButterflyAnimation()
+    {
         InvokeRepeating("AnimateRandomButterfly", 1f, 0.2f);
         this.gameObject.SetActive(true);
     }
